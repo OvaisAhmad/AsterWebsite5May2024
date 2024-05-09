@@ -55,12 +55,12 @@ const Navbar = ({ post, facilities }) => {
   const chunks = [];
   const chunks2 = [];
 
-  for (let i = 0; i < post.length; i += chunkSize) {
-    chunks.push(post.slice(i, i + chunkSize));
+  for (let i = 0; i < post?.length; i += chunkSize) {
+    chunks?.push(post?.slice(i, i + chunkSize));
   }
 
-  for (let i = 0; i < facilities.length; i += chunkSize) {
-    chunks2.push(facilities.slice(i, i + chunkSize));
+  for (let i = 0; i < facilities?.length; i += chunkSize) {
+    chunks2?.push(facilities?.slice(i, i + chunkSize));
   }
 
   return (
@@ -119,12 +119,12 @@ const Navbar = ({ post, facilities }) => {
                     <img alt="Downaroow2" src="/downmenuarrow.png" style={{ width: 10 }} />
                   </Link>
                   <div className="specialities_drop_box">
-                    {chunks.map((chunk, columnIndex) => (
+                    {chunks?.map((chunk, columnIndex) => (
                       <div key={columnIndex}>
-                        {chunk.map((post, index) => (
+                        {chunk?.map((post, index) => (
                           <div className="specialities_item" key={index}>
-                            <Link href={`/specialities/${post.slug}`}>
-                              {post.title}
+                            <Link href={`/specialities/${post?.slug}`}>
+                              {post?.title}
                             </Link>
                           </div>
                         ))}
@@ -138,19 +138,19 @@ const Navbar = ({ post, facilities }) => {
                     <img alt="Downaroow3" src="/downmenuarrow.png" style={{ width: 10 }} />
                   </Link>
                   <div className="facilities_drop_box">
-                    {chunks2.map((chunk, columnIndex) => (
+                    {chunks2?.map((chunk, columnIndex) => (
                       <div key={columnIndex}>
                         <div>
-                          {chunk.map((post, index) => (
+                          {chunk?.map((post, index) => (
                             <div className="facilities_item" key={index}>
                               <Link
                                 href={`/facilities/${(post.slug)}`}>
-                                {post.title ? post.title : ''}
+                                {post?.title ? post?.title : ''}
                               </Link>
                             </div>
                           ))}
                         </div>
-                        {columnIndex === chunks2.length - 1 && (
+                        {columnIndex === chunks2?.length - 1 && (
                           <div>
                             <div className="facilities_item">
                               <Link
@@ -290,13 +290,13 @@ const Navbar = ({ post, facilities }) => {
                 <summary>
                   {t("header.Specialities")}
                 </summary>
-                {chunks.map((chunk, columnIndex) => (
+                {chunks?.map((chunk, columnIndex) => (
                   <div className="child_link" key={columnIndex}>
                     <div key={columnIndex}>
-                      {chunk.map((post, index) => (
+                      {chunk?.map((post, index) => (
                         <div key={index}>
-                          <Link href={`/specialities/${post.slug}`}>
-                            {post.title}
+                          <Link href={`/specialities/${post?.slug}`}>
+                            {post?.title}
                           </Link>
                         </div>
                       ))}
@@ -311,19 +311,19 @@ const Navbar = ({ post, facilities }) => {
                 <summary>
                   {t("header.Facilities")}
                 </summary>
-                {chunks2.map((chunk, columnIndex) => (
+                {chunks2?.map((chunk, columnIndex) => (
                   <div className="child_link" key={columnIndex}>
                     <div className="liststyltype">
-                      {chunk.map((post, index) => (
+                      {chunk?.map((post, index) => (
                         <div key={index}>
                           <Link
-                            href={`/facilities/${(post.slug)}`}>
-                            {post.title ? post.title : ''}
+                            href={`/facilities/${(post?.slug)}`}>
+                            {post?.title ? post?.title : ''}
                           </Link>
                         </div>
                       ))}
                     </div>
-                    {columnIndex === chunks2.length - 1 && (
+                    {columnIndex === chunks2?.length - 1 && (
                       <div className="list-none">
                         <div>
                           <Link

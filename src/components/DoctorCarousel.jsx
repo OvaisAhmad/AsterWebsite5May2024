@@ -15,7 +15,7 @@ const DoctorCarousal = ({ post }) => {
 
     const { t } = useTranslation("");
 
-    let slidesToShow = Math.min(post.length, 4);
+    let slidesToShow = Math.min(post?.length, 4);
 
     const settings = {
         dots: false,
@@ -26,8 +26,8 @@ const DoctorCarousal = ({ post }) => {
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        centerMode: post.length === 1,   // Add this line
-        centerPadding: post.length === 1 ? "400px" : undefined,
+        centerMode: post?.length === 1,   // Add this line
+        centerPadding: post?.length === 1 ? "400px" : undefined,
     };
     return (
         <div className="topbar_wrapper py-[75px] doctors_carousal" style={{ maxHeight: 600, overflow: "hidden" }}>
@@ -59,16 +59,16 @@ const DoctorCarousal = ({ post }) => {
             <div>
                 <Slider {...settings}>
                     {
-                        post.map((doctor, index) => (
+                        post?.map((doctor, index) => (
                             <div className="" key={index}>
                                 <div>
                                     <div className="splt_img_container">
-                                        <img src={doctor.featuredImage?.node.sourceUrl || "/AsterDoctor.svg"} className="splt_img" alt="" />
+                                        <img src={doctor.featuredImage?.node?.sourceUrl || "/AsterDoctor.svg"} className="splt_img" alt="" />
                                     </div>
                                     <div className="py-[20px]" style={{ width: 272 }}>
-                                        <div className="splt_usr_name">{doctor.doctorFields.doctorName}</div>
+                                        <div className="splt_usr_name">{doctor.doctorFields?.doctorName}</div>
                                         <div className="splt_usr_designation">
-                                            {doctor.doctorFields.specialization}
+                                            {doctor.doctorFields?.specialization}
                                         </div>
                                     </div>
                                 </div>

@@ -13,12 +13,12 @@ export default function Footer({ post, facilities, newses }) {
   const chunks = [];
   const chunks2 = [];
 
-  for (let i = 0; i < post.length; i += chunkSize) {
-    chunks.push(post.slice(i, i + chunkSize));
+  for (let i = 0; i < post?.length; i += chunkSize) {
+    chunks.push(post?.slice(i, i + chunkSize));
   }
 
-  for (let i = 0; i < facilities.length; i += chunkSize) {
-    chunks2.push(facilities.slice(i, i + chunkSize));
+  for (let i = 0; i < facilities?.length; i += chunkSize) {
+    chunks2.push(facilities?.slice(i, i + chunkSize));
   }
 
   return (
@@ -640,7 +640,7 @@ export default function Footer({ post, facilities, newses }) {
                       {chunk.map((post, index) => (
                         <div style={{ boxSizing: "border-box" }} key={index} className="mt-[9px]">
                           <Link
-                            href={`/specialities/${post.slug}`}
+                            href={`/specialities/${post?.slug}`}
                             style={{
                               boxSizing: "border-box",
                               backgroundColor: "transparent",
@@ -649,7 +649,7 @@ export default function Footer({ post, facilities, newses }) {
                               color: "inherit",
                             }}
                           >
-                            {post.title}
+                            {post?.title}
                           </Link>
                         </div>
                       ))}
@@ -751,7 +751,7 @@ export default function Footer({ post, facilities, newses }) {
                             {chunk.map((post, index) => (
                               <div style={{ boxSizing: "border-box" }} key={index} className="mt-[9px]">
                                 <Link
-                                  href={`/facilities/${(post.slug)}`}
+                                  href={`/facilities/${(post?.slug)}`}
                                   style={{
                                     boxSizing: "border-box",
                                     backgroundColor: "transparent",
@@ -761,7 +761,7 @@ export default function Footer({ post, facilities, newses }) {
                                     color: "inherit",
                                   }}
                                 >
-                                  {post.title ? post.title : ''}
+                                  {post?.title ? post?.title : ''}
                                 </Link>
                               </div>
                             ))}
@@ -1912,7 +1912,7 @@ export default function Footer({ post, facilities, newses }) {
                     {chunk.map((post, index) => (
                       <div style={{ boxSizing: "border-box" }} key={index} className="mt-[9px]">
                         <Link
-                          href={`/specialities/${post.slug}`}
+                          href={`/specialities/${post?.slug}`}
                           style={{
                             boxSizing: "border-box",
                             backgroundColor: "transparent",
@@ -1921,7 +1921,7 @@ export default function Footer({ post, facilities, newses }) {
                             color: "inherit",
                           }}
                         >
-                          {post.title}
+                          {post?.title}
                         </Link>
                       </div>
                     ))}
@@ -1953,7 +1953,7 @@ export default function Footer({ post, facilities, newses }) {
                     {chunk.map((post, index) => (
                       <div style={{ boxSizing: "border-box" }} key={index} className="mt-[9px]">
                         <Link
-                          href={`/facilities/${(post.slug)}`}
+                          href={`/facilities/${(post?.slug)}`}
                           style={{
                             boxSizing: "border-box",
                             backgroundColor: "transparent",
@@ -1963,7 +1963,7 @@ export default function Footer({ post, facilities, newses }) {
                             color: "inherit",
                           }}
                         >
-                          {post.title ? post.title : ''}
+                          {post?.title ? post?.title : ''}
                         </Link>
                       </div>
                     ))}

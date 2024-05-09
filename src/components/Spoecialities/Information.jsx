@@ -7,8 +7,8 @@ export default function Information({ post }) {
   const chunkSize = 10;
   const chunks = [];
 
-  for (let i = 0; i < post.length; i += chunkSize) {
-    chunks.push(post.slice(i, i + chunkSize));
+  for (let i = 0; i < post?.length; i += chunkSize) {
+    chunks.push(post?.slice(i, i + chunkSize));
   }
 
   return (
@@ -68,7 +68,7 @@ export default function Information({ post }) {
                     marginRight: "-8px",
                   }}
                 >
-                  {chunks.map((chunk, columnIndex) => (
+                  {chunks?.map((chunk, columnIndex) => (
                     <div
                       key={columnIndex}
                       className="col-sm-4 : col-xs-12"
@@ -92,11 +92,11 @@ export default function Information({ post }) {
                           marginBottom: "0px",
                         }}
                       >
-                        {chunk.map((post, index) => (
+                        {chunk?.map((post, index) => (
                           <Link
                             key={index}
                             className="stretched-link"
-                            href={`/specialities/${post.slug}`}
+                            href={`/specialities/${post?.slug}`}
                             style={{
                               boxSizing: "border-box",
                               backgroundColor: "transparent",
@@ -135,7 +135,7 @@ export default function Information({ post }) {
                               }}
                             >
 
-                              {post.title}
+                              {post?.title}
 
                             </li>
                           </Link>
