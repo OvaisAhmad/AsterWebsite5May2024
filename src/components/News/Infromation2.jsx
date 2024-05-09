@@ -130,7 +130,7 @@ export default function Information2({newses}) {
           </div>
           <div className="mt-16 mx-auto">
             <div className="flex max-w-[1400px]  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mx-auto">
-              {newses.nodes.map((news,index)=>(
+              {newses.nodes?.map((news,index)=>(
               <div className="max-w-[350px] mx-auto " key={index}>
                 <Link href={news.newsFields.mapUrl || "#"} target="_blank">
                   <div className="mb-5">

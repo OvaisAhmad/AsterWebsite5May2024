@@ -9,7 +9,7 @@ const DoctorsHeader = ({ doctors, specializations, locations }) => {
   const [selectedLocation, setSelectedLocation] = useState('Location');
 const [selectedLanguage, setSelectedLanguage] = useState('Language');
 
-  const filteredDoctors = doctors.nodes.filter(doctor => {
+  const filteredDoctors = doctors.nodes?.filter(doctor => {
     return (
       (selectedDoctor === 'Doctors' || doctor.doctorFields.doctorName === selectedDoctor) &&
       (selectedSpecialty === 'Specialization' || doctor.doctorFields.specialization === selectedSpecialty) &&
@@ -255,7 +255,7 @@ languageSelect.value = 'Language';
               <select className="dr_selectcontrol" id="doctorSelect" onChange={handleDoctorChange}>
                 <option>Doctors</option>
                 {
-                  doctors.nodes.map((doctor, index) => (
+                  doctors.nodes?.map((doctor, index) => (
                     doctor.doctorFields.doctorName && (
                       <option key={index}>
                         {doctor.doctorFields.doctorName}
@@ -281,7 +281,7 @@ languageSelect.value = 'Language';
               <select className="dr_selectcontrol" id="locationSelect" onChange={handleLocationChange}>
                 <option>Location</option>
                 {
-                  locations.nodes.map((location, index) => (
+                  locations.nodes?.map((location, index) => (
                     <option key={index}>
                       {location.title}
                     </option>

@@ -6,7 +6,7 @@ const LocationHeader = ({ locations, specializations }) => {
     const [selectedCity, setSelectedCity] = useState('City');
     const [selectedArea, setSelectedArea] = useState('Area');
 
-    const filteredLocations = locations.nodes.filter(location => {
+    const filteredLocations = locations.nodes?.filter(location => {
         return (
             (selectedSpecialty === 'Specialization' || location.locationFields.specializations === selectedSpecialty) &&
             (selectedCity === 'City' || location.locationFields.city === selectedCity) &&

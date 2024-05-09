@@ -882,7 +882,7 @@ export default function Footer({ post, facilities, newses }) {
                         {t("footer.News Room")}
                       </h3>
                     </div>
-                    {newses?.nodes.map((news, index) => (
+                    {newses?.nodes?.map((news, index) => (
                       <article
                         className="footer-article : text--12"
                         key={index}
