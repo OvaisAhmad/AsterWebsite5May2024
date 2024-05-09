@@ -87,9 +87,6 @@ export async function getStaticPaths({ locales }) {
     return { paths, fallback: false }
 }
 
-console.log('Debug logs');
-console.log(lastNewses);
-
 export default function Post({ postData,blogData,dummyData, lastNewses ,facilities,doctors}) {
 
     return (
