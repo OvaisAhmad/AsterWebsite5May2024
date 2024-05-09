@@ -53,7 +53,7 @@ export async function getStaticPaths({ locales }) {
 
 export default function Post({ postData,dummyData,blogData,facilities,dummyData2,lastNewses }) {
 
-    const filteredDoctors = dummyData2.nodes.filter(doctor => {
+    const filteredDoctors = dummyData2.nodes?.filter(doctor => {
         return (
           (doctor.doctorFields.specialization === postData.title || doctor.doctorFields.specializationAr === postData.title)
         );
