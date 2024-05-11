@@ -1,193 +1,197 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 export default function FDescription({ post }) {
   return (
     <>
       <div
-        className="page-header__bottom aos-init aos-animate"
+        className='page-header__bottom aos-init aos-animate'
         style={{
-          boxSizing: "border-box",
-          pointerEvents: "auto",
-          transitionTimingFunction: "ease",
-          transitionDuration: "1s",
-          transitionProperty: "opacity, transform, -webkit-transform",
-          transitionDelay: "0.2s",
+          boxSizing: 'border-box',
+          pointerEvents: 'auto',
+          transitionTimingFunction: 'ease',
+          transitionDuration: '1s',
+          transitionProperty: 'opacity, transform, -webkit-transform',
+          transitionDelay: '0.2s',
           opacity: 1,
-          transform: "none",
+          transform: 'none',
         }}
       >
         <div
-          className="container"
+          className='container'
           style={{
-            boxSizing: "border-box",
-            margin: "0px auto",
-            padding: "0px",
-            display: "block",
-            width: "100%",
-            maxWidth: "1240px",
+            boxSizing: 'border-box',
+            margin: '0px auto',
+            padding: '0px',
+            display: 'block',
+            width: '100%',
+            maxWidth: '1240px',
           }}
         >
           <div
-            className="row : row-15 margin_md"
+            className='row : row-15 margin_md'
             style={{
-              flex: "0 1 auto",
-              flexFlow: "wrap",
-              boxSizing: "border-box",
-              display: "flex",
-              WebkitBoxFlex: "0",
-              WebkitBoxOrient: "horizontal",
-              WebkitBoxDirection: "normal",
-              marginLeft: "-15px",
-              marginRight: "-15px",
+              flex: '0 1 auto',
+              flexFlow: 'wrap',
+              boxSizing: 'border-box',
+              display: 'flex',
+              WebkitBoxFlex: '0',
+              WebkitBoxOrient: 'horizontal',
+              WebkitBoxDirection: 'normal',
+              marginLeft: '-15px',
+              marginRight: '-15px',
             }}
           >
             <div
-              className="col-xs-12 : col-sm-6"
+              className='col-xs-12 : col-sm-6'
               style={{
-                flex: "0 0 auto",
-                boxSizing: "border-box",
-                WebkitBoxFlex: "0",
-                flexBasis: "50%",
-                maxWidth: "50%",
-                paddingLeft: "15px",
-                paddingRight: "15px",
+                flex: '0 0 auto',
+                boxSizing: 'border-box',
+                WebkitBoxFlex: '0',
+                flexBasis: '50%',
+                maxWidth: '50%',
+                paddingLeft: '15px',
+                paddingRight: '15px',
               }}
             >
               <div
-                className="breadcrumbs"
+                className='breadcrumbs'
                 style={{
-                  boxSizing: "border-box",
-                  position: "relative",
-                  margin: "34px 0px 0px",
+                  boxSizing: 'border-box',
+                  position: 'relative',
+                  margin: '34px 0px 0px',
                 }}
               >
                 <div
-                  className="container"
+                  className='container'
                   style={{
-                    boxSizing: "border-box",
-                    margin: "0px auto",
-                    display: "block",
-                    width: "100%",
-                    maxWidth: "1240px",
-                    padding: "0px",
-                    paddingRight: "0px",
-                    paddingLeft: "0px",
+                    boxSizing: 'border-box',
+                    margin: '0px auto',
+                    display: 'block',
+                    width: '100%',
+                    maxWidth: '1240px',
+                    padding: '0px',
+                    paddingRight: '0px',
+                    paddingLeft: '0px',
                   }}
                 >
                   <nav
-                    aria-label="breadcrumb"
-                    style={{ boxSizing: "border-box", display: "block" }}
+                    aria-label='breadcrumb'
+                    style={{ boxSizing: 'border-box', display: 'block' }}
                   >
                     <ul
                       style={{
-                        boxSizing: "border-box",
-                        listStyle: "none",
-                        margin: "0px",
-                        padding: "0px",
-                        marginTop: "0px",
-                        marginBottom: "0px",
-                        fontSize: "0px",
-                        display: "flex",
-                        alignItems: "center",
+                        boxSizing: 'border-box',
+                        listStyle: 'none',
+                        margin: '0px',
+                        padding: '0px',
+                        marginTop: '0px',
+                        marginBottom: '0px',
+                        fontSize: '0px',
+                        display: 'flex',
+                        alignItems: 'center',
                       }}
                     >
                       <li
-                        className="breadcrumbs__item : breadcrumbs__item--home"
+                        className='breadcrumbs__item : breadcrumbs__item--home'
                         style={{
-                          boxSizing: "border-box",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          position: "relative",
-                          paddingLeft: "0px",
-                          paddingRight: "5px",
+                          boxSizing: 'border-box',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          position: 'relative',
+                          paddingLeft: '0px',
+                          paddingRight: '5px',
                         }}
                       >
                         <Link
-                          className="breadcrumbs__link : text--14"
-                          href="/"
+                          className='breadcrumbs__link : text--14'
+                          href='/'
                           style={{
-                            boxSizing: "border-box",
-                            backgroundColor: "transparent",
-                            textDecoration: "none",
+                            boxSizing: 'border-box',
+                            backgroundColor: 'transparent',
+                            textDecoration: 'none',
                             transition:
-                              "color 0.3s ease 0s, border 0.3s ease 0s",
-                            whiteSpace: "nowrap",
-                            display: "block",
-                            color: "rgb(20, 77, 146)",
-                            letterSpacing: "0.7px",
-                            textTransform: "uppercase",
-                            fontSize: "0px",
+                              'color 0.3s ease 0s, border 0.3s ease 0s',
+                            whiteSpace: 'nowrap',
+                            display: 'block',
+                            color: 'rgb(20, 77, 146)',
+                            letterSpacing: '0.7px',
+                            textTransform: 'uppercase',
+                            fontSize: '0px',
                             lineHeight: 0,
                           }}
                         >
-                          <img src="/home.svg" alt="Instagram Icon" width="17" height="17"
+                          <img
+                            src='/home.svg'
+                            alt='Instagram Icon'
+                            width='17'
+                            height='17'
                           />
                         </Link>
                       </li>
                       <li
-                        className="breadcrumbs__item"
+                        className='breadcrumbs__item'
                         style={{
-                          boxSizing: "border-box",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          position: "relative",
+                          boxSizing: 'border-box',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          position: 'relative',
                         }}
                       >
                         <Link
-                          className="breadcrumbs__link : text--14"
-                          href="#"
-                          target="_self"
-                          title="FACILITIES AND SERVICES"
+                          className='breadcrumbs__link : text--14'
+                          href='#'
+                          target='_self'
+                          title='FACILITIES AND SERVICES'
                           style={{
-                            boxSizing: "border-box",
-                            backgroundColor: "transparent",
-                            textDecoration: "none",
+                            boxSizing: 'border-box',
+                            backgroundColor: 'transparent',
+                            textDecoration: 'none',
                             transition:
-                              "color 0.3s ease 0s, border 0.3s ease 0s",
-                            fontSize: "14px",
+                              'color 0.3s ease 0s, border 0.3s ease 0s',
+                            fontSize: '14px',
                             lineHeight: 1.4,
-                            whiteSpace: "nowrap",
-                            display: "block",
-                            color: "rgb(20, 77, 146)",
-                            letterSpacing: "0.7px",
-                            textTransform: "uppercase",
+                            whiteSpace: 'nowrap',
+                            display: 'block',
+                            color: 'rgb(20, 77, 146)',
+                            letterSpacing: '0.7px',
+                            textTransform: 'uppercase',
                           }}
                         >
-                          {" / FACILITIES AND SERVICES "}
+                          {' / FACILITIES AND SERVICES '}
                         </Link>
                       </li>
                       <li
-                        className="breadcrumbs__item"
+                        className='breadcrumbs__item'
                         style={{
-                          boxSizing: "border-box",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          position: "relative",
+                          boxSizing: 'border-box',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          position: 'relative',
                           fontWeight: 700,
                         }}
                       >
                         <Link
-                          className="breadcrumbs__link : text--14"
-                          href="#"
-                          target="_self"
+                          className='breadcrumbs__link : text--14'
+                          href='#'
+                          target='_self'
                           style={{
-                            boxSizing: "border-box",
-                            backgroundColor: "transparent",
-                            textDecoration: "none",
+                            boxSizing: 'border-box',
+                            backgroundColor: 'transparent',
+                            textDecoration: 'none',
                             transition:
-                              "color 0.3s ease 0s, border 0.3s ease 0s",
-                            fontSize: "14px",
+                              'color 0.3s ease 0s, border 0.3s ease 0s',
+                            fontSize: '14px',
                             lineHeight: 1.4,
-                            whiteSpace: "nowrap",
-                            display: "block",
-                            color: "rgb(20, 77, 146)",
-                            letterSpacing: "0.7px",
-                            textTransform: "uppercase",
+                            whiteSpace: 'nowrap',
+                            display: 'block',
+                            color: 'rgb(20, 77, 146)',
+                            letterSpacing: '0.7px',
+                            textTransform: 'uppercase',
                           }}
                         >
-                          {" / "}
-                          {post.title}
+                          {' / '}
+                          {post?.title}
                         </Link>
                       </li>
                     </ul>
@@ -195,13 +199,10 @@ export default function FDescription({ post }) {
                 </div>
               </div>
               <div
-                className="page-header__text"
-                style={{ boxSizing: "border-box", marginTop: "27px" }}
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              >
-
-
-              </div>
+                className='page-header__text'
+                style={{ boxSizing: 'border-box', marginTop: '27px' }}
+                dangerouslySetInnerHTML={{ __html: post?.content }}
+              ></div>
             </div>
             {/* <div
               className="col-sm-6 : col-xs-12"

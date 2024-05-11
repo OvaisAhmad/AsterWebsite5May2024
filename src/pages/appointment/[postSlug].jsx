@@ -136,14 +136,14 @@ export default function Post({
   facilities,
   doctors,
 }) {
-  console.log({
-    postData,
-    blogData,
-    dummyData,
-    lastNewses,
-    facilities,
-    doctors,
-  });
+  // console.log({
+  //   postData,
+  //   blogData,
+  //   dummyData,
+  //   lastNewses,
+  //   facilities,
+  //   doctors,
+  // });
 
   return (
     <div>
