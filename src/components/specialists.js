@@ -28,7 +28,7 @@ const Specialists = ({ post }) => {
   const [selectedDoctors, setSelectedDoctors] = useState([]);
 
   useEffect(() => {
-    const doctorsWithImage = post.nodes?.filter(
+    const doctorsWithImage = post?.nodes?.filter(
       (doctor) => doctor.featuredImage?.node.sourceUrl
     );
     const shuffledDoctors = doctorsWithImage?.sort(() => Math.random() - 0.5);
@@ -83,10 +83,10 @@ const Specialists = ({ post }) => {
                   style={{ width: 240 }}
                 >
                   <div className='splt_usr_name'>
-                    {doctor.doctorFields.doctorName}
+                    {doctor?.doctorFields?.doctorName}
                   </div>
                   <div className='splt_usr_designation'>
-                    {doctor.doctorFields.designation}
+                    {doctor?.doctorFields?.designation}
                   </div>
                 </div>
               </div>
