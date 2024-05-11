@@ -30,7 +30,7 @@ export async function getStaticProps({ locale }) {
     const blogData = await getLastBlogs(language);
     const doctors = await getRandomDoctors();
     const lastNewses = await getLastNews();
-    console.log('Last Newses:', lastNewses);
+   // console.log('Last Newses:', lastNewses);
     return {
       props: {
         allPosts: dummyData,
