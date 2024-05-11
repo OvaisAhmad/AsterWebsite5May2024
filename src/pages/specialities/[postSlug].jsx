@@ -65,14 +65,14 @@ export default function Post({
   dummyData2,
   lastNewses,
 }) {
-  console.log('value return ', {
-    postData,
-    dummyData,
-    blogData,
-    facilities,
-    dummyData2,
-    lastNewses,
-  });
+  // console.log('value return ', {
+  //   postData,
+  //   dummyData,
+  //   blogData,
+  //   facilities,
+  //   dummyData2,
+  //   lastNewses,
+  // });
   const filteredDoctors = dummyData2.nodes?.filter((doctor) => {
     return (
       doctor.doctorFields.specialization === postData.title ||
